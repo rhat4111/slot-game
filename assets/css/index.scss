@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body * {
+  font-family: 'Bangers', cursive;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background: url('../images/bg.png');
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .main {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .podium {
+      top: 0;
+      max-width: 1600px;
+      position: absolute;
+    }
+
+    .machine {
+      top: -100px;
+      position: relative;
+      .bg {
+        max-width: 500px;
+        width: 100%;
+      }
+
+      .box {  
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transform: translate(-50%, -30%);
+        left: 50%;
+
+        .box-bg {
+          z-index: 1;
+          width: 100%;
+        }
+
+        .box-content {
+          width: 86%;
+          height: 72%;
+          z-index: 2;
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-49%, -50%);
+
+          & > div {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .number-list {
+              position: absolute;
+              transition: 10s;
+              bottom: 0;
+              width: 100%;
+              & > div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 50px;
+                color: #333;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      #start {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50px);
+        width: 100%;
+        max-width: 250px;
+        padding: 0;
+        border: none;
+        border: none;
+        border-radius: 20px;
+        background-image: none;
+        font-size: 40px;
+        letter-spacing: 5px;
+        cursor: pointer;
+    
+        &:focus {
+          outline: none;
+        }
+    
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 864px) {
+  body {
+    flex-direction: column;
+    padding: 50px 0;
+    
+    .main {
+      margin-bottom: 50px;
+
+      .machine {
+        top: -30px;
+      }
+    }
+  }
+}

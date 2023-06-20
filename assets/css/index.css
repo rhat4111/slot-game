@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+body * {
+  font-family: 'Bangers', cursive;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url("../images/bg.png");
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .main {
+  width: 100%;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main .podium {
+  top: 0;
+  max-width: 1600px;
+  position: absolute;
+}
+
+body .main .machine {
+  top: -100px;
+  position: relative;
+}
+
+body .main .machine .bg {
+  max-width: 500px;
+  width: 100%;
+}
+
+body .main .machine .box {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  left: 50%;
+}
+
+body .main .machine .box .box-bg {
+  z-index: 1;
+  width: 100%;
+}
+
+body .main .machine .box .box-content {
+  width: 86%;
+  height: 72%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-49%, -50%);
+          transform: translate(-49%, -50%);
+}
+
+body .main .machine .box .box-content > div {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+body .main .machine .box .box-content > div .number-list {
+  position: absolute;
+  -webkit-transition: 10s;
+  transition: 10s;
+  bottom: 0;
+  width: 100%;
+}
+
+body .main .machine .box .box-content > div .number-list > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  color: #333;
+  width: 100%;
+  height: 100%;
+}
+
+body .main .machine #start {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50px);
+          transform: translate(-50%, -50px);
+  width: 100%;
+  max-width: 250px;
+  padding: 0;
+  border: none;
+  border: none;
+  border-radius: 20px;
+  background-image: none;
+  font-size: 40px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+body .main .machine #start:focus {
+  outline: none;
+}
+
+body .main .machine #start:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 864px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0;
+  }
+  body .main {
+    margin-bottom: 50px;
+  }
+  body .main .machine {
+    top: -30px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
